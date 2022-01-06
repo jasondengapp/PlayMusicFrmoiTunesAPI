@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2ND-CB-TUq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Play Music Table View Controller-->
+        <scene sceneID="GiK-Wb-ecG">
+            <objects>
+                <tableViewController extendedLayoutIncludesOpaqueBars="YES" id="E20-Zd-gS0" customClass="PlayMusicTableViewController" customModule="PlayMusicFrmoAppleAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" allowsSelection="NO" rowHeight="120" sectionHeaderHeight="18" sectionFooterHeight="18" id="TRo-zh-lHt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outlet property="dataSource" destination="E20-Zd-gS0" id="N4k-8D-v41"/>
+                            <outlet property="delegate" destination="E20-Zd-gS0" id="Z4p-Go-40h"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="yXy-HD-x3W"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uFr-ev-pQM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="-128.57142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cHd-Ur-JWn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2ND-CB-TUq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5H4-V4-RCG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="E20-Zd-gS0" kind="relationship" relationship="rootViewController" id="38G-Es-07u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="43a-1c-ncJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20.289855072463769" y="-128.57142857142856"/>
+        </scene>
+    </scenes>
+</document>
