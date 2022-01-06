@@ -10,6 +10,7 @@ import UIKit
 class PlayMusicTableViewCell: UITableViewCell {
     @IBOutlet weak var songImage: UIImageView!{
         didSet{
+            // 圖片㘣形
             songImage.layer.cornerRadius = songImage.bounds.midX
             songImage.clipsToBounds = true
         }
