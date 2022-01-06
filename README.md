@@ -4,3 +4,6 @@ playMusic App Demo
 2. 支持背景播放
 3. 關鍵字搜尋歌手/歌曲
 4. Demo 影片 https://youtu.be/Tb2afwh6IYo
+
+# 第三方套件
+AlamoFire
